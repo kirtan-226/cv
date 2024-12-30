@@ -46,7 +46,7 @@ const SideBar = () => (
     <section id="footer">
       <ContactIcons />
       <p className="copyright">
-        &copy; Kirtan J Limbachiya <Link to="/">mldangelo.com</Link>.
+        <Link to="https://cv-kirtans-projects-1b2e5e4a.vercel.app/">&copy; Kirtan J Limbachiya </Link>.
       </p>
     </section>
   </section>
