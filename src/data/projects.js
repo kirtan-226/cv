@@ -14,31 +14,29 @@ const data = [
   {
     title: 'AR-Enabled Intruder Detection System',
     subtitle: 'Innovative security solution developed during a hackathon.',
-    // link: 'https://devpost.com/software/harvest',
-    image: '/images/projects/harvest.jpg',
+    image: '/images/projects/intruderdetect.jpg',
     date: '2022-10-08',
     desc:
       'Created an intruder detection system using AR cameras integrated with machine learning models. '
       + 'Designed to enhance real-time security by accurately identifying threats through augmented reality. ',
   },
   {
-    title: 'Restaurant Inventory Management System',
-    subtitle: 'Optimized inventory tracking for efficient restaurant operations. ',
-    // link: 'http://www.spacepotato.org',
-    image: '/images/projects/spacepotato.jpg',
-    date: '2023-04-30',
+    title: 'Cucina',
+    subtitle: 'Dish recommendor for restaurants',
+    link: 'https://github.com/taifarif94/cucina',
+    image: '/images/projects/cucina.png',
+    date: '2024-11-1',
     desc:
-      'Built a cost-effective system to streamline inventory tracking and management processes. '
-      + 'Enhanced operational efficiency by reducing inventory discrepancies and improving cost control. ',
+      'Developed a full-stack proof of concept for a restaurant recommendation system. Implemented React interfaces for custom menu creation, created Express/Node.js services for login (including Google OAuth), and established a MySQL connection for persistence. The design lays the foundation for collaborative and context-based food recommendations.',
   },
   {
-    title: 'Secure and Scalable Organizational Database System',
-    subtitle: 'Designed a feature-rich database management system prioritizing security and user accessibility.',
-    image: '/images/projects/catdetector.jpg',
-    date: '2023-03-15',
+    title: 'Transparent User Profiling',
+    subtitle: 'Personalized news delivery with transparent user profiles',
+    link: 'https://github.com/kirtan-226/transparent-user-profiling',
+    image: '/images/projects/transparentprofiling.png',
+    date: '2025-05-1',
     desc:
-      'Developed a secure database management system with intuitive features and role-based access controls. '
-      + 'Improved query performance by 30%, enhancing operational efficiency for multi-user environments. ',
+      'Transparent User Profiling is a Python-based news aggregation platform with a full-stack architecture. The backend uses FastAPI and connects to MongoDB for user authentication, token management, and scheduled news retrieval. A Dash and Bootstrap frontend provides login and registration pages, category filtering, preference management, and article recommendations. Personalized recommendations use NLP techniques to extract keywords and analyze user preferences. Overall, the project demonstrates expertise in backend development, frontend design, and basic natural language processing.',
   },
 ];
 
