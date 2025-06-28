@@ -9,15 +9,13 @@ import ReactDOM from 'react-dom/client';
 import { act } from 'react-dom/test-utils';
 import App from '../App';
 
-describe('renders the app', () => {
-  // mocks the fetch API used on the stats page and the about page.
+describe('renders single page app without navigation', () => {
   const jsonMock = jest.fn(() => Promise.resolve({}));
   const textMock = jest.fn(() => Promise.resolve(''));
   global.fetch = jest.fn(() => Promise.resolve({
     json: jsonMock,
     text: textMock,
   }));
-  // mocks the scrollTo API used when navigating to a new page.
   window.scrollTo = jest.fn();
 
   let container;
@@ -41,77 +39,18 @@ describe('renders the app', () => {
   });
 
   it('should render the title', async () => {
-    expect(document.title).toBe("Kirtan J Limbachiya");
+    expect(document.title).toBe('Kirtan J Limbachiya');
   });
 
-  it('can navigate to /about', async () => {
-    expect.assertions(7);
-    const aboutLink = document.querySelector(
-      '#header > nav > ul > li:nth-child(1) > a',
-    );
-    expect(aboutLink).toBeInTheDocument();
-    await act(async () => {
-      await aboutLink.click();
-    });
-    expect(document.title).toContain('About |');
-    expect(window.location.pathname).toBe('/about');
-    expect(window.scrollTo).toHaveBeenNthCalledWith(1, 0, 0);
-    expect(global.fetch).toHaveBeenCalledTimes(1);
-    expect(jsonMock).toHaveBeenCalledTimes(0);
-    expect(textMock).toHaveBeenCalledTimes(1);
+  it('should not render a navigation header', async () => {
+    expect(document.querySelector('#header')).toBeNull();
   });
 
-  it('can navigate to /resume', async () => {
-    expect.assertions(3);
-    const contactLink = document.querySelector(
-      '#header > nav > ul > li:nth-child(2) > a',
-    );
-    expect(contactLink).toBeInTheDocument();
-    await act(async () => {
-      await contactLink.click();
-    });
-    expect(document.title).toContain('Resume |');
-    expect(window.location.pathname).toBe('/resume');
-  });
-
-  it('can navigate to /projects', async () => {
-    expect.assertions(3);
-    const contactLink = document.querySelector(
-      '#header > nav > ul > li:nth-child(3) > a',
-    );
-    expect(contactLink).toBeInTheDocument();
-    await act(async () => {
-      await contactLink.click();
-    });
-    expect(document.title).toContain('Projects |');
-    expect(window.location.pathname).toBe('/projects');
-  });
-
-  it('can navigate to /stats', async () => {
-    expect.assertions(5);
-    const contactLink = document.querySelector(
-      '#header > nav > ul > li:nth-child(4) > a',
-    );
-    expect(contactLink).toBeInTheDocument();
-    await act(async () => {
-      await contactLink.click();
-    });
-    expect(document.title).toContain('Stats |');
-    expect(window.location.pathname).toBe('/stats');
-    expect(global.fetch).toHaveBeenCalledTimes(1);
-    expect(jsonMock).toHaveBeenCalledTimes(1);
-  });
-
-  it('can navigate to /contact', async () => {
-    expect.assertions(3);
-    const contactLink = document.querySelector(
-      '#header > nav > ul > li:nth-child(5) > a',
-    );
-    expect(contactLink).toBeInTheDocument();
-    await act(async () => {
-      await contactLink.click();
-    });
-    expect(document.title).toContain('Contact |');
-    expect(window.location.pathname).toBe('/contact');
+  it('should render all sections', async () => {
+    expect(document.querySelector('#about')).toBeInTheDocument();
+    expect(document.querySelector('#resume')).toBeInTheDocument();
+    expect(document.querySelector('#projects')).toBeInTheDocument();
+    expect(document.querySelector('#stats')).toBeInTheDocument();
+    expect(document.querySelector('#contact')).toBeInTheDocument();
   });
 });
