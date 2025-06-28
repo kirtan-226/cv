@@ -1,6 +1,6 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 // import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
+// import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 // import { faAngellist } from '@fortawesome/free-brands-svg-icons/faAngellist';
 // import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
@@ -19,11 +19,11 @@ const data = [
   //   label: 'Facebook',
   //   icon: faFacebookF,
   // },
-  {
-    link: 'https://www.instagram.com/dangelosaurus/',
-    label: 'Instagram',
-    icon: faInstagram,
-  },
+  // {
+  //   link: 'https://www.instagram.com/dangelosaurus/',
+  //   label: 'Instagram',
+  //   icon: faInstagram,
+  // },
   {
     link: 'https://www.linkedin.com/in/kirtan-j-limbachiya/',
     label: 'LinkedIn',

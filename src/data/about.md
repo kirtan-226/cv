@@ -1,10 +1,10 @@
 # Intro
 
-I am Kirtan J. Limbachiya, a passionate and skilled professional with a solid foundation in web development and extensive experience in technologies like React, Node.js, and CodeIgniter. I have successfully led and contributed to innovative projects, crafting efficient and user-centric solutions.
+Hello! I’m Kirtan J. Limbachiya—a curious mind passionate about technology, learning, and impact. My journey in tech started with a fascination for problem-solving and evolved through hands-on experience in software development, data science, and leadership. I've worked on diverse projects involving technologies like React, Node.js, and CodeIgniter, and led teams during internships where we delivered robust backend systems.
 
-Currently, I am pursuing an MSc in Digital Engineering in Germany, with a strong interest in Data Engineering. This academic journey reflects my dedication to evolving as a data engineer while honing my expertise in software architecture and development.
+Currently, I’m pursuing a Master's in Digital Engineering in Germany, with a special interest in data engineering and intelligent systems. My academic path has been shaped by a desire to innovate and continuously grow as both a developer and a collaborator.
 
-Beyond my academic and professional endeavors, I thrive on impactful collaboration and enjoy playing chess tournament. My ultimate aspiration is to contribute to projects that drive meaningful social and technological advancements, applying my skills to solve complex, real-world problems with ingenuity and purpose.
+Outside of tech, I find joy in community service through BAPS and have led initiatives like the Unnat Bharat Clean Drive in Bharuch. I also enjoy chess, which sharpens my strategic thinking—something I bring into my coding and team efforts. My mission is to use technology for good—solving real-world problems with precision, empathy, and purpose.
 # Some History
 
 I completed my 10th grade in 2017 from Queen of Angels Higher Secondary School, Bharuch, achieving a notable score of 78%. Following this, I pursued my higher secondary education at Green Valley High School, Vadodara, from 2017 to 2019, where I successfully passed the 12th grade with a score of 70%.

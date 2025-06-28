@@ -41,10 +41,6 @@ const Index = () => {
 
   return (
     <Main description="Kirtan Limbachiya's personal website.">
-      {/* Intro */}
-      <article className="post" id="index">
-        <p>Welcome to my website!</p>
-      </article>
 
       {/* About */}
       <article className="post markdown" id="about">

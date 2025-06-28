@@ -22,25 +22,13 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        I&apos;m Kirtan J Limbachiya, a passionate software developer dedicated to learning and
-        staying updated with the latest technologies. With experience in backend and frontend
-        development, I specialize in PHP, Laravel, Node, and React. Currently pursuing an MS
-        in Digital Engineering at Otto von Guericke University, I bring a strong foundation in
-        creating efficient and innovative solutions.
+        A result-oriented software developer with a strong passion for full-stack development
+        and data-driven innovation. I specialize in PHP (Laravel, CodeIgniter), Vue.js, Node.js,
+        and Python. I have experience building scalable backend systems and intuitive user
+        interfaces. Currently pursuing an MSc in Digital Engineering at Otto von Guericke
+        University, I strive to merge academic knowledge with real-world problem-solving to
+        create impactful solutions.
       </p>
-      <ul className="actions">
-        <li>
-          {!window.location.pathname.includes('/resume') ? (
-            <Link to="/resume" className="button">
-              Learn More
-            </Link>
-          ) : (
-            <Link to="/about" className="button">
-              About Me
-            </Link>
-          )}
-        </li>
-      </ul>
     </section>
 
     <section id="footer">
